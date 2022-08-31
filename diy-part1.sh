@@ -12,5 +12,5 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
- sed -i '$a src-git package https://github.com/armorgen/openwrt-luci.git' feeds.conf.default
- #sed -i '$a src-git package https://github.com/coolsnowwolf/luci' feeds.conf.default
+ sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages' feeds.conf.default
+ #sed -i '$a src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci' feeds.conf.default
